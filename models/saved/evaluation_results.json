@@ -1,0 +1,73 @@
+{
+  "LSTM": {
+    "RMSE": 0.6391,
+    "MAE": 0.4901,
+    "R2": 0.9175,
+    "model": "LSTM",
+    "task": "Temperature Forecasting"
+  },
+  "GRU": {
+    "RMSE": 20.1068,
+    "MAE": 18.3539,
+    "R2": 0.1139,
+    "model": "GRU",
+    "task": "AQI Forecasting"
+  },
+  "CNN-LSTM": {
+    "RMSE": 3.7524,
+    "MAE": 2.3219,
+    "R2": 0.297,
+    "model": "CNN-LSTM",
+    "task": "Rainfall Prediction"
+  },
+  "Transformer": {
+    "RMSE": 0.642,
+    "MAE": 0.4895,
+    "R2": 0.9146,
+    "model": "Transformer",
+    "task": "Temperature Forecasting"
+  },
+  "RandomForest": {
+    "Accuracy": 1.0,
+    "F1_weighted": 1.0,
+    "ConfusionMatrix": [
+      [
+        1824,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "model": "Random Forest",
+    "task": "Heat-Zone Classification"
+  },
+  "XGBoost": {
+    "Accuracy": 0.9965,
+    "F1_weighted": 0.9965,
+    "ConfusionMatrix": [
+      [
+        216,
+        0
+      ],
+      [
+        6,
+        1494
+      ]
+    ],
+    "model": "XGBoost",
+    "task": "Flood-Risk Classification"
+  },
+  "HealthRisk": {
+    "Accuracy": 1.0,
+    "F1_weighted": 1.0,
+    "ConfusionMatrix": [
+      [
+        1827
+      ]
+    ],
+    "model": "RF-HealthRisk",
+    "task": "Human Health Risk Classification"
+  }
+}
