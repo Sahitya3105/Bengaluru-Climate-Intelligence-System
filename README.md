@@ -8,7 +8,6 @@
 > An AI-powered climate intelligence and human risk assessment platform for Bengaluru/Karnataka, integrating multi-source environmental data from 2005–2026.
 
 ---
-
 ## 🎯 Objective
 
 Develop a research-grade climate analytics and prediction system that analyzes environmental change, predicts future climate conditions, detects urban heat island effects, estimates pollution and flood risks, and evaluates potential human health impacts using AI/ML/DL techniques.
