@@ -125,6 +125,10 @@ with st.sidebar:
             aqi = aqi[aqi["year"].between(*year_range)]
         if not mrg.empty:
             mrg = mrg[mrg["year"].between(*year_range)]
+        if not sat.empty and "year" in sat.columns:
+            sat = sat[sat["year"].between(*year_range)]
+        if not ward.empty and "year" in ward.columns:
+            ward = ward[ward["year"].between(*year_range)]
     st.markdown("<small style='color:#8b949e'>Data: IMD · NASA POWER · CPCB · NRSC</small>", unsafe_allow_html=True)
 
 
