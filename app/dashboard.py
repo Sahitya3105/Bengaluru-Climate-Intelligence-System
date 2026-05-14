@@ -219,7 +219,8 @@ elif page == "🌡️ Temperature & UHI":
         # UHI estimate
         st.markdown('<div class="section-title">🔥 Urban Heat Island Intensity</div>', unsafe_allow_html=True)
         annual = met.groupby("year")["temperature_mean"].mean().reset_index()
-        annual["uhi_score"] = (annual["temperature_mean"] - 26.5).clip(0)
+        baseline_temp = annual.head(5)["temperature_mean"].mean() # Calculate baseline from 2005-2009
+        annual["uhi_score"] = (annual["temperature_mean"] - baseline_temp).clip(0)
         import plotly.express as px
         fig = px.bar(annual, x="year", y="uhi_score",
                      color="uhi_score", color_continuous_scale="Reds",
